@@ -294,7 +294,7 @@ li a:focus{
     font-size: 25px;
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:300px){
 
     .container{
         display: flex;
