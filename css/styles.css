@@ -294,7 +294,7 @@ li a:focus{
     font-size: 25px;
 }
 
-@media screen and (max-width:350px){
+@media screen and (max-width:400px){
 
     .container{
         display: flex;
@@ -358,6 +358,36 @@ li a:focus{
     .contact{
         margin-top: 10%;
     }
+
+    .namecontainer .name{
+        font-size: 40px; 
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 620px;
+        margin-top: 200px;
+    }
+
+    .namecontainer .posting{
+        font-size: 20px;
+        margin-right: 650px;
+        margin-bottom: 250px;
+    }
+
+    .about_content .heading{
+        font-size: 25px;
+        margin-left: 50px;
+    }
+
+    .about_content .content{
+        font-size: 20px;
+        height: 150px;
+        width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
 }
 
 
