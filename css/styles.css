@@ -14,18 +14,28 @@
     position: fixed;
     z-index: 1;
     overflow: hidden;
+    
 
     
 }
 
+
+
+
 .img{
     height:250px;
     width:250px;
-    border-radius: 100%;
+    border-radius: 75%;
     border-style: solid;
-    border-color:#FF914D;
-    border-width: 20px;
-    padding: 5px;
+    border-width: 10px;
+    border-color: #FF914D;
+    padding: 10px;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .nav{
@@ -93,6 +103,7 @@ li a:focus{
 .name{
     color:#994A39;
     font-size: 80px;
+    text-shadow: #FF914D 5px 5px 15px;
 
 }
 
@@ -203,7 +214,7 @@ li a:focus{
 }
 
 .skill { 
-    background-color:#475E16; 
+    background-color:#0f6066; 
     color: white; 
     padding: 1%; 
     text-align: right; 
@@ -265,8 +276,18 @@ li a:focus{
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: width 1s;
 
 }
+.icon:hover{
+    width: 750px;
+    color:blue;
+}
+
+.icon a:hover{
+    color:blue;
+}
+
 
 .fa-regular{
     font-size: 50px;
@@ -294,7 +315,7 @@ li a:focus{
     font-size: 25px;
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:480px){
 
     .container{
         display: flex;
@@ -305,9 +326,10 @@ li a:focus{
 
     .asside{
         height:7%;
-        width: 100%;
-        
-
+        width: 100%;   
+    }
+    .body{
+        width:100%;
     }
 
     .asside div img{
