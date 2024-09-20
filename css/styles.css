@@ -51,6 +51,9 @@
     text-align: center;
 }
 
+   
+
+
 li a{
     text-decoration: none;
     color:black;
@@ -71,6 +74,18 @@ li a:focus{
     color: black;
     padding:10px;
     border-radius: 10px;
+    
+}
+li a.active{
+    background-color:#FF914D;
+    box-shadow:5px 5px 5px black;
+    color: black;
+    padding:10px;
+    border-radius: 10px;
+}
+
+
+.background{
     
 }
 
@@ -147,7 +162,9 @@ li a:focus{
     display: grid;
     grid-template-rows: 20% 40% 40%;
     height: 100vh;
+  
 }
+
 
 .main_head{
     display: flex;
@@ -362,58 +379,96 @@ li a:focus{
         width: 100vw;
     }
 
-    .main{
-        margin-top: 10%;
+    .about{
+        height: 100vh;
+        margin-top: 10vh;
+        display: grid;
+        grid-template-rows: 60% 40%;
+        
+    }
+    .namecontainer{
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .name{
+        font-size: 50px;
+    }
+
+    .posting{
+        font-size:20px ;
+        margin-right: 100px;
+    }
+
+    .aboutcontainer{
+        height:40vh ;
+        width: 100vw;
+       
+    }
+
+    .about_content{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .heading{
+        font-size: 30px;
+        margin-right: 160px;
+       
+    }
+
+
+    .content{
+        box-sizing: border-box;
+        height: 20vh;
+        width: 90vw;
+        font-size: 20px;
+        
     }
 
     .education{
-        margin-top: 10%;
+        margin-top: 10vh;
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 20% 40% 40%;
     }
 
-    .learning{
-        margin-top: 10%;
+    .main_head div{
+        font-size: 40px;
     }
 
-    .hobbies{
-        margin-top: 10%;
-    }
-    .contact{
-        margin-top: 10%;
-    }
-
-    .namecontainer .name{
-        font-size: 40px; 
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: 620px;
-        margin-top: 200px;
-    }
-
-    .namecontainer .posting{
-        font-size: 20px;
-        margin-right: 650px;
-        margin-bottom: 250px;
-    }
-
-    .about_content .heading{
+    .education_head{
         font-size: 25px;
-        margin-left: 50px;
+        margin-right: 200px;
     }
 
-    .about_content .content{
-        font-size: 20px;
-        height: 150px;
-        width: 1000px;
-        display: flex;
-        flex-wrap: wrap;
+    .education_content{
+        font-size: 14px;
+        margin: 0;
+        
     }
+
+    .education_content ul li{
+        padding-right: 200px;
+        margin-left: 80px;
+    }
+    
+    
+        
+   
+
+
+
+
 
 
 }
-
-
-
-
-
-
