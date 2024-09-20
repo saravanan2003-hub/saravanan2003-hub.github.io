@@ -177,6 +177,28 @@ li a.active{
     font-size: 60px;
 }
 
+.hob_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hob_head div{
+    color: #994A39;
+    font-size: 60px;
+}
+
+.con_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con_head div{
+    color: #994A39;
+    font-size: 60px;
+}
+
 
 .education_head{
     color: black;
@@ -327,10 +349,7 @@ li a.active{
 
 }
 
-.contact_deatails div div p{
-    
-    font-size: 25px;
-}
+
 
 @media screen and (max-width:480px){
 
@@ -384,8 +403,8 @@ li a.active{
         margin-top: 10vh;
         display: grid;
         grid-template-rows: 60% 40%;
+        }
         
-    }
     .namecontainer{
         height: 50vh;
         width: 100vw;
@@ -416,6 +435,7 @@ li a.active{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
 
     }
 
@@ -444,23 +464,94 @@ li a.active{
 
     .main_head div{
         font-size: 40px;
+       margin-right: 340px;
     }
 
     .education_head{
         font-size: 25px;
-        margin-right: 200px;
+        
     }
 
     .education_content{
-        font-size: 14px;
+        font-size: 20px;
         margin: 0;
         
     }
 
     .education_content ul li{
+
+        width: 100vw;
         padding-right: 200px;
-        margin-left: 80px;
+        margin-left: 150px;
+        
     }
+
+    .learning{
+        margin-top: 10vh;
+    }
+
+    .hob_head div{
+        font-size: 40px;
+    }
+    .lern_head{
+        font-size: 40px;
+    }
+
+    .skill{
+        font-size: 15px;
+    }
+    
+
+    .hobbies_content div{
+        font-size: 20px;
+    }
+
+    .contact{
+        width: 100vw;
+        margin-top: 10vh;
+    }
+
+    .con_head div{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .icon{
+        height: 60px;
+        width: 350px;
+    }
+
+    .fa-regular{
+        font-size: 40px;
+    }
+    
+    .fa-brands{
+        font-size: 40px;
+    }
+    
+    .icon div{
+        margin-left: 10px;
+        transition: width 1s;
+        
+    }
+
+    .icon:hover{
+        width:400px ;
+    }
+    
+    .contact_deatails div div a{
+       
+        font-size: 15px;
+        
+        
+    
+    
+    }
+
+
     
     
         
