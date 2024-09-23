@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+/* asside section */
+
 .asside{
     background-color:#FF7D2A;
     height: 100vh;
@@ -59,35 +61,36 @@ li a{
     color:black;
 }
 
-li a:hover {
+/* li a:hover
+ {
     background-color:#FF914D;
     box-shadow:5px 5px 5px black;
     color: black;
     padding:10px;
     border-radius: 10px;
 
+} */
+
+.nav li a:hover{
+    background-color: #FF914D;
+    box-shadow:10px 10px 5px black;
+    color: black;
+    padding:10px;
+    border-radius: 10px;
 }
 
-li a:focus{
+/* li a:focus{
     background-color: #FF914D;
     box-shadow:10px 10px 5px black;
     color: black;
     padding:10px;
     border-radius: 10px;
     
-}
-li a.active{
-    background-color:#FF914D;
-    box-shadow:5px 5px 5px black;
-    color: black;
-    padding:10px;
-    border-radius: 10px;
-}
+} */
 
 
-.background{
-    
-}
+
+/* about section */
 
 .main{
     background-color:#fbefe9;
@@ -116,11 +119,19 @@ li a.active{
 }
 
 .name{
-    color:#994A39;
+    color:black;
     font-size: 80px;
     text-shadow: #FF914D 5px 5px 15px;
+    animation-name: name;
+    animation: name 1s infinite alternate;
 
 }
+
+@keyframes name {
+    50%  {background-color:white;}
+    100%  {background-color:#FF914D;}
+
+  }
 
 .posting{
     color: black;
@@ -157,6 +168,9 @@ li a.active{
     margin-top: 20px;
     padding: 20px;
 }
+
+
+/* education section */
 
 .education{
     display: grid;
@@ -216,6 +230,8 @@ li a.active{
     font-weight: lighter;
 
 }
+
+/* learning section */
 
 .learning{
     height: 100vh;
@@ -277,6 +293,8 @@ li a.active{
     margin-bottom: 10px;
 }
 
+/* hobbies section */
+
 .hobbies{
     height: 100vh;
     display: grid;
@@ -292,6 +310,8 @@ li a.active{
     line-height: 150px;
     font-size: 30px;
 }
+
+/* contact section */
 
 .contact{
     display: grid;
@@ -350,6 +370,9 @@ li a.active{
 }
 
 
+/* media query */
+
+
 
 @media screen and (max-width:480px){
 
@@ -403,7 +426,7 @@ li a.active{
         margin-top: 10vh;
         display: grid;
         grid-template-rows: 60% 40%;
-        }
+    }
         
     .namecontainer{
         height: 50vh;
@@ -417,6 +440,7 @@ li a.active{
     .name{
         font-size: 50px;
     }
+   
 
     .posting{
         font-size:20px ;
@@ -426,7 +450,6 @@ li a.active{
     .aboutcontainer{
         height:40vh ;
         width: 100vw;
-       
     }
 
     .about_content{
@@ -435,14 +458,11 @@ li a.active{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-
     }
 
     .heading{
         font-size: 30px;
         margin-right: 160px;
-       
     }
 
 
@@ -451,7 +471,6 @@ li a.active{
         height: 20vh;
         width: 90vw;
         font-size: 20px;
-        
     }
 
     .education{
@@ -469,13 +488,11 @@ li a.active{
 
     .education_head{
         font-size: 25px;
-        
     }
 
     .education_content{
         font-size: 20px;
         margin: 0;
-        
     }
 
     .education_content ul li{
@@ -483,7 +500,6 @@ li a.active{
         width: 100vw;
         padding-right: 200px;
         margin-left: 150px;
-        
     }
 
     .learning{
@@ -511,12 +527,11 @@ li a.active{
         margin-top: 10vh;
     }
 
-    .con_head div{
+     .con_head div{
         font-size: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     .icon{
@@ -535,7 +550,6 @@ li a.active{
     .icon div{
         margin-left: 10px;
         transition: width 1s;
-        
     }
 
     .icon:hover{
@@ -545,21 +559,5 @@ li a.active{
     .contact_deatails div div a{
        
         font-size: 15px;
-        
-        
-    
-    
     }
-
-
-    
-    
-        
-   
-
-
-
-
-
-
 }
