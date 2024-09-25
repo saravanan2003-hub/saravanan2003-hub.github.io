@@ -6,7 +6,7 @@
 /* asside section */
 
 .asside{
-    background-color:#FF7D2A;
+    background-color:#EE7214;
     height: 100vh;
     width: 25%;
     display: flex;
@@ -93,7 +93,7 @@ li a{
 /* about section */
 
 .main{
-    background-color:#fbefe9;
+    background-color:#F9E8D9;
     width: 75vw;
     height: 100vh;
     margin-left: 25%;
@@ -105,11 +105,11 @@ li a{
 
 .about{
     display: grid;
-    grid-template-rows: 60% 40%;
+    grid-template-rows: 40% 60%;
 }
 
 .namecontainer{
-    height: 70vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,17 +121,17 @@ li a{
 .name{
     color:black;
     font-size: 80px;
-    text-shadow: #FF914D 5px 5px 15px;
+    text-shadow: #FF914D 5px 5px 5px;
     animation-name: name;
-    animation: name 1s infinite alternate;
+    /* animation: name 1s infinite alternate; */
 
 }
 
-@keyframes name {
+/* @keyframes name {
     50%  {background-color:white;}
     100%  {background-color:#FF914D;}
 
-  }
+  } */
 
 .posting{
     color: black;
@@ -147,7 +147,7 @@ li a{
 
 
 .aboutcontainer{
-    height: 30vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
 }
@@ -161,11 +161,13 @@ li a{
 
 .content{
     box-sizing: border-box;
-    height:150px ;
+    height:320px ;
     width: 950px;
-    background-image: linear-gradient(to right,#FF914D,#fbefe9);
+    /* background-image: linear-gradient(to right rgba(255, 145, 77, 0.7)); */
+    background-image: linear-gradient(to right,#EE7214,#F9E8D9);
+    border-radius: 10px;
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 20px;
 }
 
@@ -228,7 +230,20 @@ li a{
     font-size: 25px;
     margin-left: 200px;
     font-weight: lighter;
+   
+}
 
+.education_content ul{
+    box-sizing: border-box;
+    width: 800px;
+    
+    background-image:linear-gradient(to right,#EE7214,#F9E8D9); 
+    border-radius: 10px;
+    list-style-type: none;
+}
+
+.education_content ul li{
+    margin-left: 30px;
 }
 
 /* learning section */
@@ -269,7 +284,7 @@ li a{
 }
 
 .skill { 
-    background-color:#0f6066; 
+    background-color:#527853; 
     color: white; 
     padding: 1%; 
     text-align: right; 
@@ -303,13 +318,36 @@ li a{
 }
 
 .hobbies_content{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.hobbie-img{
+    height: 400px;
+    width: 300px;
+    box-sizing: border-box;
+    background-color: #EE7214;
+    padding: 15px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.hobbies-main{
+    display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 150px;
-    font-size: 30px;
+    flex-direction: column;
+    font-size: 35px;
+    
 }
+.hobbies-main div{
+    margin: 25px;
+}
+
+
 
 /* contact section */
 
@@ -331,7 +369,8 @@ li a{
     height:70px;
     width: 600px;
     border-radius: 10px;
-    background-image: linear-gradient(to right,#FF914D,#fbefe9);
+    background-image: linear-gradient(to right,#EE7214,#F9E8D9);
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -340,11 +379,11 @@ li a{
 }
 .icon:hover{
     width: 750px;
-    color:blue;
+    color:#0C2D57;
 }
 
 .icon a:hover{
-    color:blue;
+    color:#0C2D57;
 }
 
 
@@ -425,11 +464,11 @@ li a{
         height: 100vh;
         margin-top: 10vh;
         display: grid;
-        grid-template-rows: 60% 40%;
+        grid-template-rows: 40% 60%;
     }
         
     .namecontainer{
-        height: 50vh;
+        height: 30vh;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -448,7 +487,7 @@ li a{
     }
 
     .aboutcontainer{
-        height:40vh ;
+        height:60vh ;
         width: 100vw;
     }
 
@@ -468,7 +507,7 @@ li a{
 
     .content{
         box-sizing: border-box;
-        height: 20vh;
+        height: 50vh;
         width: 90vw;
         font-size: 20px;
     }
@@ -520,6 +559,12 @@ li a{
 
     .hobbies_content div{
         font-size: 20px;
+    }
+
+    .hobbies_content img{
+        display: flex;
+        flex-wrap: wrap;
+
     }
 
     .contact{
