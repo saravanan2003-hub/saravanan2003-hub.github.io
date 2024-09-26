@@ -5,7 +5,7 @@
 
 /* asside section */
 
-.asside{
+.aside{
     background-color:#EE7214;
     height: 100vh;
     width: 25%;
@@ -71,7 +71,8 @@ li a{
 
 } */
 
-.nav li a:hover{
+.nav li a:hover,
+a.active{
     background-color: #FF914D;
     box-shadow:10px 10px 5px black;
     color: black;
@@ -162,7 +163,7 @@ li a{
 .content{
     box-sizing: border-box;
     height:320px ;
-    width: 950px;
+    width: 1000px;
     /* background-image: linear-gradient(to right rgba(255, 145, 77, 0.7)); */
     background-image: linear-gradient(to right,#EE7214,#F9E8D9);
     border-radius: 10px;
@@ -273,7 +274,7 @@ li a{
 
 
 
-.process_bar { 
+.progress_bar { 
     background-color: rgb(192, 192, 192); 
     width: 90%; 
     border-radius: 15px; 
@@ -332,7 +333,13 @@ li a{
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
+    transition:transform 0.3s ease-in-out
 
+}
+
+.hobbie-img:hover{
+    transform: scale(1.1);
+    box-shadow: #0C2D57 10px 10px 5px;
 }
 
 .hobbies-main{
@@ -499,6 +506,8 @@ li a{
         align-items: center;
     }
 
+    /* education page */
+
     .heading{
         font-size: 30px;
         margin-right: 160px;
@@ -529,17 +538,27 @@ li a{
         font-size: 25px;
     }
 
-    .education_content{
+    .education_content {
         font-size: 20px;
         margin: 0;
+        box-sizing: border-box;
+        height: auto;
+        width: 90%;
+        margin-left: 10px;
+        
     }
 
     .education_content ul li{
 
         width: 100vw;
-        padding-right: 200px;
-        margin-left: 150px;
+        padding-right: 300px;
+        margin-left: 10px;
+       
     }
+
+    /* learning page */
+
+
 
     .learning{
         margin-top: 10vh;
@@ -555,10 +574,24 @@ li a{
     .skill{
         font-size: 15px;
     }
+
+    /* hobbies page */
+
     
+    .hobbies{
+        height:auto;
+        display: grid;
+        grid-template-rows:3% 97%;
+        padding-top: 10vh;
+    }
+
+    .hobbies-main{
+        margin: 0;
+    }
 
     .hobbies_content div{
         font-size: 20px;
+        margin: 10px;
     }
 
     .hobbies_content img{
@@ -567,9 +600,12 @@ li a{
 
     }
 
+    /* contact page */
+
     .contact{
         width: 100vw;
         margin-top: 10vh;
+       
     }
 
      .con_head div{
@@ -582,6 +618,8 @@ li a{
     .icon{
         height: 60px;
         width: 350px;
+        margin-right: 30px;
+        
     }
 
     .fa-regular{
@@ -598,7 +636,7 @@ li a{
     }
 
     .icon:hover{
-        width:400px ;
+        width:380px ;
     }
     
     .contact_deatails div div a{
