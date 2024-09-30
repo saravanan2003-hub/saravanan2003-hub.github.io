@@ -333,13 +333,13 @@ a.active{
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
-    transition:transform 0.3s ease-in-out
+    transition:transform 0.3s ease-in-out;
 
 }
 
 .hobbie-img:hover{
     transform: scale(1.1);
-    box-shadow: #0C2D57 10px 10px 5px;
+    box-shadow: #0C2D57 10px 10px 10px;
 }
 
 .hobbies-main{
@@ -429,7 +429,7 @@ a.active{
         width:400px;
     }
 
-    .asside{
+    .aside{
         height:7%;
         width: 100%;   
     }
@@ -437,7 +437,7 @@ a.active{
         width:100%;
     }
 
-    .asside div img{
+    .aside div img{
         display: none;
 
     }
@@ -447,14 +447,14 @@ a.active{
         
     }
 
-    .asside .navbar ul {
+    .aside .navbar ul {
         display: flex;
         flex-direction: row;
         
         
     }
 
-    .asside .navbar ul li{
+    .aside .navbar ul li{
         font-size: 11px;
         width: 80%;
         margin: 5px;
