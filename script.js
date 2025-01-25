@@ -45,7 +45,7 @@ function updateText() {
 }
 
 
-setInterval(updateText, 3990);
+setInterval(updateText, 4000);
 
 GitHubCalendar(".calendar", "saravanan2003-hub");
 GitHubCalendar(".calendar", "saravanan2003-hub", { responsive: true });
