@@ -51,40 +51,59 @@ GitHubCalendar(".calendar", "saravanan2003-hub");
 GitHubCalendar(".calendar", "saravanan2003-hub", { responsive: true });
 
 const form = document.getElementsByClassName("contact-form")[0];
-form.addEventListener("submit",(event)=>{
-  let isValid = false;
+form.addEventListener("submit", (event) => {
+  let hasError = false;
 
+  // Get input elements and error containers
   const nameInp = document.getElementById("nameInp");
   const emailInp = document.getElementById("emailInp");
   const NameError = document.getElementsByClassName("NameError")[0];
   const emailError = document.getElementsByClassName("emailError")[0];
 
   const nameVal = nameInp.value.trim();
-  const emailval = emailInp.value.trim();
+  const emailVal = emailInp.value.trim();
 
-  if(nameVal.length === 0){
+  const validateEmail = (email) => {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@(gmail|yahoo|outlook)\.com$/i;
+    return emailPattern.test(email);
+};
+
+  // Clear previous errors
+  NameError.textContent = "";
+  emailError.textContent = "";
+  nameInp.style.borderColor = "";
+  emailInp.style.borderColor = "";
+
+
+  // Validate name
+  if (nameVal.length === 0) {
     NameError.textContent = "Name is required";
     nameInp.style.borderColor = "red";
-    isValid = true;
+    hasError = true;
+    event.preventDefault();
+  }else{
+    hasError = false;
+  }
+
+  if (emailVal.length === 0) {
+    emailError.textContent = "Email is required";
+    emailInp.style.borderColor = "red";
+    hasError = true;
+  } else if (!validateEmail(emailVal)) {
+    emailError.textContent = "Please check your email";
+    emailInp.style.borderColor = "red";
+    hasError = true;
+  } else {
+    hasError = false;
   }
 
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if(emailval.length === 0){
-    emailError.textContent = "Email is required"
-    emailInp.style.borderColor = 'red';
-    isValid = true;
-  }
-  else if (!emailRegex.test(emailval)) {
-    emailError.textContent = "Please check your email"
-    emailInp.style.borderColor = 'red';
-    isValid = true;
-  }
-
-  if (isValid) {
+  // Prevent form submission if there's any error
+  if (hasError) {
     event.preventDefault();
   }
-})
+
+});
 
 
 
