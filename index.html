@@ -4,183 +4,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS,">
-    <meta name="description" content="Free Web tutorials for HTML and CSS">
-    <link rel="icon" href="./assets/images/logo.png" type="img3/x-icon">
-    <title>Saravanan_Portfolio</title>
+    <title>Saravanan Portfolio</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    <script src="./script.js" type="module" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/> -->
 
 
 </head>
 
 <body>
-
-    <!----------------- aside section ----------------->
-    <div class="container">
-        <div class="aside">
-            <div class="image">
-
-                <img src="./assets/images/asideImg.jpeg" alt="this is saravanan image" class="img">
-            </div>
-
-            <div class="navbar">
-                <ul class="nav">
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#education">EDUCATION</a></li>
-                    <li><a href="#learning">LEARNING</a></li>
-                    <li><a href="#hobbies">HOBBIES</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </div>
+    <header>
+        <div class="name">
+            <h1>S<span>N</span></h1>
         </div>
-    </div>
-    <div class="main">
+        <nav>
+            <a href="#Home" class="active">Home</a>
+            <a href="#Education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Project</a>
+            <a href="#ContactMe">Contact Me</a>
+        </nav>
+        <div id="myBar"></div>
+    </header>
+    <main class="container">
+        <div class="main">
+            <section class="home sections" id="Home">
+                <div class="homeDiv">
+                    <div class="aboutMe">
+                        <h3><span>Hello</span>, Its Me</h3>
+                        <h2><span>S</span>aravanan</h2>
+                        <h1><span class="posting">Web</span> <span id="postingSpan">Developer</span></h1>
+                        <p class="aboutMeText">I'm Saravanan from Aruppukkottai, Tamil Nadu. And I complete my Diploma
+                            in Electronics and communication Engineering Coding is my passion, and I enjoy exploring
+                            different programming languages.</p>
+                        <div class="buttonDiv">
+                            <a href="./assets/photos/saravanan resume.pdf" download>Download CV</a>
+                            <a href="mailto:saravanansundar506@gmail.com" target="_blank">Hire Me</a>
+                        </div>
+                        <div class="github-calendar">
+                            <img src="https://ghchart.rshah.org/saravanan2003-hub" alt="" class="calendar"
+                                width="700px" />
+                        </div>
+                    </div>
+                    <div class="myPicture">
+                        <img src="./assets/photos/myPhoto.png" alt=""
+                            class="Picture">
+                    </div>
+                </div>
 
-        <!-----------------------about section------------------->
-        <section class="about" id="about">
-            <div class="namecontainer">
-                <div class="name">SARAVANAN.S</div>
-                <div class="posting">FULL STACK DEVELOPER</div>
-
-            </div>
-            <div class="aboutcontainer">
-                <div class="about_content">
-                    <div class="heading">ABOUT ME</div>
-                    <div class="content">
-                        <div>I'm Saravanan from Aruppukkottai, Tamil Nadu. And I complete my Diploma in Electronics and communication Engineering  Coding is my passion, and I enjoy
-                            exploring different programming languages. In my free time, I unwind by listening to music. Currently I am studying in FSSA and I am learning things like English, Life Skills, HTML, CSS, Javascript and Problem Solving. I thrive on solving problems, bringing ideas to life, and continuously learning new technologies to stay up-to-date with the fast-paced world of web development.
+            </section>
+            <section id="Education" class="sections">
+                <div class="educationDiv">
+                    <div class="heading">
+                        <div>Education</div>
+                    </div>
+                    <div class="sslcDiv">
+                        <div class="courseHead">
+                            <p>SSLC</p>
+                        </div>
+                        <div class="educationDeatails">
+                            <img src="./assets/photos/school.png" alt="" class="EducationImg">
+                            <div class="sslcContent">
+                                <ul>
+                                    <li>Studyied in saliar mahajana higher secondary school</li>
+                                    <li>Passeed out year 2018</li>
+                                    <li>75% in SSLC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sslcDiv">
+                        <div class="courseHead">
+                            <p class="Diplamo-Head">DIPLOMA</p>
+                        </div>
+                        <div class="educationDeatails">
+                            <div class="DiplomaDeatails">
+                                <ul>
+                                    <li>Studyied in Sri sowdambika polytechnic college at Electronics and communication
+                                        engineering</li>
+                                    <li>Passed out Year 2021</li>
+                                    <li>93% in Electronics and communication engineering</li>
+                                    <li>During this time I topper of my department</li>
+                                </ul>
+                            </div>
+                            <img src="./assets/photos/college.png" alt="" class="EducationImg">
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-------------------- education section --------------------->
+            <section id="skills" class="sections">
+                <div class="skillsDiv">
+                    <div class="heading">
+                        <div>SKILLS</div>
+                    </div>
+                    <div class="mySkills">
+                        <div class="mySkillsGrid">
+                            <div class="mySkillsGridDiv">
+                                <div class="nameDiv">HTML</div>
+                                <div class="progressBar">
+                                    <i class="fa-brands fa-html5"></i>
+                                    <div class="container1">
+                                        <div class="skill html">90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mySkillsGridDiv">
+                                <div class="nameDiv">CSS</div>
+                                <div class="progressBar">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <div class="container1">
+                                        <div class="skill css">85%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mySkillsGridDiv">
+                                <div class="nameDiv">Java Script</div>
+                                <div class="progressBar">
+                                    <i class="fa-brands fa-js"></i>
+                                    <div class="container1">
+                                        <div class="skill js">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mySkillsGridDiv">
+                                <div class="nameDiv">Python</div>
+                                <div class="progressBar">
+                                    <i class="fa-brands fa-python"></i>
+                                    <div class="container1">
+                                        <div class="skill python">70%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mySkillsGridDiv">
+                                <div class="nameDiv">My SQL</div>
+                                <div class="progressBar">
+                                    <i class="fa-solid fa-database"></i>
+                                    <div class="container1">
+                                        <div class="skill sql">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySkillsGrid">
 
-        <section class="education" id="education">
-            <div class="main_head">
-                <div>EDUCATION</div>
-            </div>
+                            <div class="mySkillsGridDiv">
+                                <div class="nameDiv">Git</div>
+                                <div class="progressBar">
+                                    <i class="fa-brands fa-github"></i>
+                                    <div class="container1">
+                                        <div class="skill github">30%</div>
+                                    </div>
+                                </div>
+                            </div>
 
-            <div class="sslc">
-                <div class="education_head">SSLC</div>
-                <div class="education_content">
-                    <ul>
-                        <li>75% In SSLC</li>
-                        <li>Passed out year 2018</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="diploma">
-                <div class="education_head">DIPLOMA</div>
-                <div class="education_content">
-                    <ul>
-                        <li>Diploma in Electronics and Communication Engineering with 92% scorcs</li>
-                        <li>Passed out year 2021</li>
-                    </ul>
-                </div>
-            </div>
-
-        </section>
-
-        <!------------------------- learning section ------------------->
-
-        <section class="learning" id="learning">
-            <div class="lern_head">
-                <div>LEARNING</div>
-            </div>
-            <div class="subjects">
-
-                <div>
-                    <h2>HTML</h2>
-                    <div class="progress_bar">
-                        <div class="skill html">80%</div>
+                            <div class="mySkillsGridDiv">
+                                <div class="nameDiv">Firebase</div>
+                                <div class="progressBar">
+                                    <i class="fa-solid fa-fire"></i>
+                                    <div class="container1">
+                                        <div class="skill firebase">40%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mySkillsGridDiv">
+                                <div class="nameDiv">Problem Solving</div>
+                                <div class="progressBar">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                    <div class="container1">
+                                        <div class="skill ps">L6</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mySkillsGridDiv">
+                                <div class="nameDiv">English</div>
+                                <div class="progressBar">
+                                    <i class="fa-solid fa-language"></i>
+                                    <div class="container1">
+                                        <div class="skill English">55%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mySkillsGridDiv">
+                                <div class="nameDiv">Life Skills</div>
+                                <div class="progressBar">
+                                    <i class="fa-solid fa-users"></i>
+                                    <div class="container1">
+                                        <div class="skill lifeSkills">55%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <h2>CSS</h2>
-                    <div class="progress_bar">
-                        <div class="skill css">70%</div>
+            </section>
+
+            <section id="projects" class="sections">
+                <div class="ProjectDiv">
+                    <div class="heading">
+                        <div>Project</div>
+                    </div>
+                    <div class="projectDiv">
+                        <div class="iframeDiv">
+                            <iframe src="https://link-upp.netlify.app/pages/homepage" frameborder="0"></iframe>
+                        </div>
+                        <div class="projectDes"> 
+                            <p>I am developing a social media website using HTML, CSS, JavaScript, Firebase, and Cloudinary. My platform includes features such as like functionality, comment functionality, and the ability to follow other users. It also has a real-time chat feature, which is still a work in progress, but I have successfully implemented the basic chat functionality. This project highlights my expertise in integrating front-end technologies with backend services to deliver seamless and interactive user experiences.</p>
+                            <a href="https://link-upp.netlify.app" target="_blank">Explore Now</a>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <h2>JAVA SCRIPT</h2>
-                    <div class="progress_bar">
-                        <div class="skill javaScript">10%</div>
+            </section>
+
+            <section id="ContactMe" class="sections">
+                <div class="contactDiv">
+                    <div class="heading">
+                        <div>Get In Touch</div>
+                    </div>
+                    <div class="contactDeatailsDiv">
+                        <div class="addressDiv">
+                            <div class="addressDivImg">
+                                <img src="./assets/photos/location.jpeg" alt="" class="locationImage">
+                            </div>
+                            <div class="addressDivDiv">
+                                <h1>Live Address</h1>
+                                <ul>
+                                    <li>No.567 10th Barathiyar Street, Main road,</li>
+                                    <li>Annai santhya nagar, Kurinji nagar,</li>
+                                    <li>Perungudi, chennai - 600096.</li>
+                                </ul>
+                            </div>
+                            <div class="addressDivDiv">
+                                <h1>Native address</h1>
+                                <ul>
+                                    <li>No 46 S.T.Preumal street,</li>
+                                    <li>Velayuthapuram,</li>
+                                    <li>Aruppukottai - 626101,</li>
+                                    <li>Viruthunagar.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="formDiv">
+                            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                                <input type="hidden" name="access_key" value="8d20d35b-4611-4c58-8f5b-7672fe38e891">
+                                <div class="inputDiv glass-effect" >
+                                    <label for="">Your Name</label>
+                                    <input type="text" name="name" placeholder="Enter your name here" id="nameInp">
+                                    <span class="NameError"></span>
+                                </div>
+                                <div class="inputDiv glass-effect">
+                                    <label for="Email">Email</label>
+                                    <input type="email" name="email" placeholder="Enter your email here" id="emailInp">
+                                    <span class="emailError"></span>
+                                </div>
+                                <div class="inputDiv">
+                                    <label for="">Enter Your Message</label>
+                                    <textarea name="message" placeholder="Message..."></textarea>
+                                    <span></span>
+                                </div>
+                                <button type="submit" class="Sendbtn">Send Message</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div>
-                    <h2>PROBLEM SOLVING</h2>
-                    <div class="progress_bar">
-                        <div class="skill problemSolving">80%</div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!----------------------- hobbies section -------------------------->
-
-        <section class="hobbies" id="hobbies">
-            <div class="hob_head">
-                <div>HOBBIES</div>
-            </div>
-
-            <div class="hobbies_content">
-
-                <div class="hobbies-main">
-                    <div>Listening Music</div>
-                    <div><img src="./assets/images/hobbies1.jpg" alt="This is music image " class="hobbie-img"></div>
-                </div>
-                <div class="hobbies-main">
-                    <div>Watching Movies</div>
-                    <div><img src="./assets/images/hobbies2.avif" alt="this is movies image" class="hobbie-img"></div>
-                </div>
-                <div class="hobbies-main">
-                    <div>Cycling</div>
-                    <div><img src="./assets/images/hobbies3.jpg" alt="this is cycling image" class="hobbie-img"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <div class="con_head">
-                <div>CONTACT</div>
-            </div>
-
-            <!----------------------------- contact section ----------------------->
-
-            <div class="contact_deatails">
-                <div class="icon">
-                    <div><i class="fa-regular fa-envelope" class="icon"></i></div>
-                    <div><a
-                            href="mailto:saravanan.sundaramahalingam@fssa.freshworks.com">sarvanan.sundaramahalingam@fssa.freshworks.com</a>
-                    </div>
-                </div>
-                <div class="icon">
-                    <div><i class="fa-brands fa-facebook" class="icon"></i></div>
-                    <div>
-                        <a href="https://www.facebook.com/sara.namas.94">sara namas</a>
-                    </div>
-                </div>
-                <div class="icon">
-                    <div><i class="fa-brands fa-instagram" class="icon"></i></div>
-                    <div>
-                        <a href="https://www.instagram.com/_sweet_saravanan_/">Sweet_saravanan</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-<script src="./script.js"></script>
-
+        </div>
+    </main>
+    <footer>
+        <div>
+        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:saravanansundar506@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/dashboard" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.hackerrank.com/profile/saravanasundar51" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+        </div>
+        <a href="#Home" class="arrow"><i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
+    
 </body>
 
 </html>
