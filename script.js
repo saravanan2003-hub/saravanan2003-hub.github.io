@@ -105,6 +105,36 @@ form.addEventListener("submit", (event) => {
 
 });
 
+let index1 = 0;
+
+function moveSlide(step) {
+    const slides = document.querySelectorAll(".carousel-slide");
+    const slideWidth = slides[0].clientWidth; // Get the width dynamically
+    const totalSlides = slides.length;
+
+    index1 += step;
+
+    if (index1 >= totalSlides) {
+        index1 = 0; // Loop back to first slide
+    } else if (index1 < 0) {
+        index1 = totalSlides - 1; // Loop back to last slide
+    }
+
+    document.querySelector(".carousel-container").style.transform = `translateX(-${index1 * slideWidth}px)`;
+}
+
+// Auto-slide every 3 seconds
+setInterval(() => moveSlide(1), 4000);
+
+const prev = document.getElementsByClassName("prev")[0];
+const next = document.getElementsByClassName("next")[0];
+prev.addEventListener("click",()=>{
+  moveSlide(-1)
+});
+next.addEventListener("click",()=>{
+  moveSlide(1)
+});
+
 
 
 

@@ -491,19 +491,12 @@ header nav a.active::after {
 }
 
 .iframeDiv{
-    height:"450px";
-    width:"550px"; 
+    width:50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    border-radius: 10px;
 }
 
-iframe{
-    height: 100%;
-    width: 400px;
-}
 
 .PortfolioDes{
     display: none;
@@ -546,6 +539,7 @@ iframe{
     flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
+    text-align: justify;
 }
 
 .projectDes div p{
@@ -752,10 +746,48 @@ footer .fa-github{
     font-size: 20px;
 }
 
+.carousel {
+    position: relative;
+    width: 550px;
+    overflow: hidden;
+    border-radius: 10px;
+}
 
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 2400px;
+}
 
+.carousel-slide {
+    width:550px;
+    height: 450px;
+    /* object-fit: cover; */
+}
 
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
 
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 
 
